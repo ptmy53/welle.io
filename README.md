@@ -3,6 +3,26 @@
 This repository contains the implementation of an SDR DAB/DAB+ receiver.  
 Please see the project website https://www.welle.io for a user oriented documentation.
 
+## 🇹🇷 Türkçe Dil Desteği (Turkish Language Support)
+
+Bu fork, welle.io'nun arayüzünü **tamamen Türkçe** hale getiren `tr_TR` dil desteğini ekler.
+
+**Ne yapıldı / What was done**
+
+* Arayüzdeki 330 mesajın 329'u Türkçeye çevrildi — ana ekran, tüm ayar sayfaları, uzman ayarlar,
+  DAB program türleri, dil adları listesi ve tüm cihaz hata mesajları dahil.
+  *(329 of 330 UI messages translated — main view, all settings pages, expert settings, DAB
+  program types, language names and all device error messages.)*
+* Yeni dosyalar: `src/welle-gui/i18n/tr_TR.ts` (Qt Linguist kaynağı) ve derlenmiş `tr_TR.qm`.
+* Türkçe dil seçeneği: **Ayarlar → Global settings → Language → Türkçe** ("Auto" seçiliyken
+  Türkçe işletim sistemlerinde uygulama otomatik olarak Türkçe açılır).
+* Türkçe'yi görmek için test edilebilir; sıfır durumda ayarlar `%APPDATA%\io.welle.welle-gui`
+  yolundadır.
+* Değişiklikler `add-turkish-translation` dalındadır ve upstream algran projeye
+  [PR #962](https://github.com/AlbrechtL/welle.io/pull/962) ile gönderilmiştir.
+* Windows'ta hazırlanmış derleme: sayfa sağında / üstünde **Releases** sekmesinden indirilebilir
+  *(kurulum gerektmez, aç-çalıştır)*.
+
 **Build status**
 - Linux (Flatpak x86_64 and arm64): [![Linux build](https://github.com/AlbrechtL/welle.io/actions/workflows/linux.yml/badge.svg)](https://github.com/AlbrechtL/welle.io/actions/workflows/linux.yml)
 - Windows (Installer x86_64): [![Windows build](https://github.com/AlbrechtL/welle.io/actions/workflows/windows.yml/badge.svg)](https://github.com/AlbrechtL/welle.io/actions/workflows/windows.yml)
